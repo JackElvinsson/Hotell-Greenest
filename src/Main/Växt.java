@@ -5,11 +5,15 @@ public abstract class Växt implements Bevattning {
     protected String namn;
     protected double längdIMeter;
 
-    public Växt(String namn,double längdIMeter) {
+    protected VätskeTyp typAvVätska;
+
+    public Växt(String namn,double längdIMeter, VätskeTyp vätska) {
         this.namn = namn;
         this.längdIMeter = längdIMeter;
+        this.typAvVätska = vätska;
 
     }
+
 
     public double getLängdIMeter() {
         return längdIMeter;
