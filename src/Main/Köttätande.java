@@ -9,7 +9,9 @@ public class Köttätande extends Växt {
     private final double LITER_PER_METER_KÖTTÄTANDE = 0.2;
     private final double VÄTSKA_BASNIVÅ_LITER = 0.1;
 
-
+    // *** POLYMORFISM ***
+    // Här uppnås polymorfism genom att anropa metoden vätska() som ursprungligen
+    // ligger som en abstrakt metod i klassen/interfacet Bevattning.
     @Override
     public String vätska() {
 

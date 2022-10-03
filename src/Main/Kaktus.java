@@ -6,6 +6,10 @@ public class Kaktus extends Växt {
     }
 
     private final int CENTILITER_VÄTSKA_KAKTUS = 2;
+
+    //*** POLYMORFISM ***
+    // Här uppnås polymorfism genom att anropa metoden vätska() som ursprungligen
+    // ligger som en abstrakt metod i klassen/interfacet Bevattning.
     @Override
     public String vätska() {
 

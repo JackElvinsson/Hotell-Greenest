@@ -4,7 +4,6 @@ public abstract class Växt implements Bevattning {
 
     protected String namn;
     protected double längdIMeter;
-
     protected VätskeTyp typAvVätska;
 
     public Växt(String namn,double längdIMeter, VätskeTyp vätska) {
