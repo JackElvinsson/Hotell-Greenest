@@ -17,7 +17,6 @@ public class Huvudprogram {
 
                 String växt = JOptionPane.showInputDialog(null, "Vilken växt ska få vätska").toLowerCase().trim();
 
-
                 switch (växt) {
 
 //            case "igge" -> System.out.println(igge.vätska());
@@ -30,12 +29,12 @@ public class Huvudprogram {
                     case "laura" -> JOptionPane.showMessageDialog(null, laura.vätska());
                     case "meatloaf" -> JOptionPane.showMessageDialog(null, meatloaf.vätska());
                     case "putte" -> JOptionPane.showMessageDialog(null, putte.vätska());
-                    default -> JOptionPane.showMessageDialog(null,"Det finns ingen växt med det namnet");
+                    default -> JOptionPane.showMessageDialog(null, "Det finns ingen växt med det namnet");
 
                 }
 
             } catch (NullPointerException e) {
-                JOptionPane.showMessageDialog(null,"Program avslutat");
+                JOptionPane.showMessageDialog(null, "Program avslutat");
                 System.exit(0);
             }
         }
