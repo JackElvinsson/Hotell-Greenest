@@ -1,5 +1,7 @@
 package Main;
 
+// Låter superklassen Växt implementera interfacet Bevattning så att alla sub-klasser
+// till Växt kan använda interfacet utan att behöva implementera det till varje enskild sub-klass
 public abstract class Växt implements Bevattning {
 
     protected String namn;

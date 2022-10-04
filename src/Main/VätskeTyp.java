@@ -6,7 +6,7 @@ public enum VätskeTyp {
 
     public final String vätskaTillVäxt;
 
-    VätskeTyp (String s) {
+    VätskeTyp(String s) {
         vätskaTillVäxt = s;
     }
 }

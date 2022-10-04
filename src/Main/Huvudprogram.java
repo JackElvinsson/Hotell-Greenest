@@ -1,8 +1,12 @@
 package Main;
 
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Huvudprogram {
+
+    List<Växt> växterlista = new ArrayList<>();
 
     Huvudprogram() {
 
@@ -10,6 +14,11 @@ public class Huvudprogram {
         Palm laura = new Palm("Laura", 5);
         Köttätande meatloaf = new Köttätande("Meatloaf", 0.7);
         Palm putte = new Palm("Putte", 1);
+        //växterlista.add(new Kaktus("Igge", 0.02));
+        //växterlista.add(new Palm("Laura", 5));
+        //växterlista.add(new Köttätande("Meatloaf", 0.7));
+        //växterlista.add(new Palm("Putte", 1));
+
 
         while (true) {
 
@@ -21,7 +30,7 @@ public class Huvudprogram {
 
 //            case "igge" -> System.out.println(igge.vätska());
 //            case "laura" -> System.out.println(laura.vätska());
-//            case "meatloaf" -> System.out.println(meatloaf.vätska());
+//            case "meatloaf" -> System.out.println(meatloaf.vätska()
 //            case "putte" -> System.out.println(putte.vätska());
 //            default -> System.out.println("Det finns ingen växt med det namnet.");
 
