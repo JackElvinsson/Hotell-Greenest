@@ -17,7 +17,6 @@ class VäxtTest_setNamn_setLängdIMeter {
         exempel.setLängdIMeter(20);
         assert(exempel).getLängdIMeter() == 20 ;
 
-        System.out.println(exempel.längdIMeter);
     }
 
     @Test
@@ -27,7 +26,6 @@ class VäxtTest_setNamn_setLängdIMeter {
         exempel.setNamn("Inte en Palm");
         assert (exempel).getNamn().equals("Inte en Palm");
 
-        System.out.println(exempel.getNamn());
 
     }
 }

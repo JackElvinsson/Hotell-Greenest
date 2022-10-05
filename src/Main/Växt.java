@@ -4,17 +4,24 @@ package Main;
 // till Växt kan använda interfacet utan att behöva implementera det till varje enskild sub-klass
 public abstract class Växt implements Bevattning {
 
-    protected String namn;
-    protected double längdIMeter;
-    protected VätskeTyp typAvVätska;
+    // *** INKAPSLING ***
+    // Alla instansvariabler är private och kan bara nås via getters och setters
+    private String namn;
+    private double längdIMeter;
 
-    public Växt(String namn,double längdIMeter, VätskeTyp vätska) {
+    //Enum deklaration
+    private VätskeTyp typAvVätska;
+
+    public Växt(String namn, double längdIMeter, VätskeTyp vätska) {
         this.namn = namn;
         this.längdIMeter = längdIMeter;
         this.typAvVätska = vätska;
 
     }
 
+    public VätskeTyp getTypAvVätska() {
+        return typAvVätska;
+    }
 
     public double getLängdIMeter() {
         return längdIMeter;

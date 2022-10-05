@@ -14,10 +14,11 @@ public class Huvudprogram {
         Palm laura = new Palm("Laura", 5);
         Köttätande meatloaf = new Köttätande("Meatloaf", 0.7);
         Palm putte = new Palm("Putte", 1);
-        //växterlista.add(new Kaktus("Igge", 0.02));
-        //växterlista.add(new Palm("Laura", 5));
-        //växterlista.add(new Köttätande("Meatloaf", 0.7));
-        //växterlista.add(new Palm("Putte", 1));
+
+        växterlista.add(igge);
+        växterlista.add(laura);
+        växterlista.add(meatloaf);
+        växterlista.add(putte);
 
 
         while (true) {
@@ -26,7 +27,7 @@ public class Huvudprogram {
 
                 String växt = JOptionPane.showInputDialog(null, "Vilken växt ska få vätska").toLowerCase().trim();
 
-                switch (växt) {
+                //switch (växt) {
 
 //            case "igge" -> System.out.println(igge.vätska());
 //            case "laura" -> System.out.println(laura.vätska());
@@ -34,14 +35,18 @@ public class Huvudprogram {
 //            case "putte" -> System.out.println(putte.vätska());
 //            default -> System.out.println("Det finns ingen växt med det namnet.");
 
-                    case "igge" -> JOptionPane.showMessageDialog(null, igge.vätska());
-                    case "laura" -> JOptionPane.showMessageDialog(null, laura.vätska());
-                    case "meatloaf" -> JOptionPane.showMessageDialog(null, meatloaf.vätska());
-                    case "putte" -> JOptionPane.showMessageDialog(null, putte.vätska());
-                    default -> JOptionPane.showMessageDialog(null, "Det finns ingen växt med det namnet");
+                    //case "igge" -> JOptionPane.showMessageDialog(null, igge.vätska());
+                    //case "laura" -> JOptionPane.showMessageDialog(null, laura.vätska());
+                    //case "meatloaf" -> JOptionPane.showMessageDialog(null, meatloaf.vätska());
+                    //case "putte" -> JOptionPane.showMessageDialog(null, putte.vätska());
+                    //default -> JOptionPane.showMessageDialog(null, "Det finns ingen växt med det namnet");
 
+                for (Växt v : växterlista) {
+                    if (v.getNamn().toLowerCase().equals(växt))
+                        JOptionPane.showMessageDialog(null, v.vätska());
                 }
 
+                // Om man väljer "cancel"
             } catch (NullPointerException e) {
                 JOptionPane.showMessageDialog(null, "Program avslutat");
                 System.exit(0);

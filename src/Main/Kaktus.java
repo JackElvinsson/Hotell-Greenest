@@ -7,12 +7,16 @@ public class Kaktus extends Växt {
 
     private final int CENTILITER_VÄTSKA_KAKTUS = 2;
 
+    public int getCENTILITER_VÄTSKA_KAKTUS() {
+        return CENTILITER_VÄTSKA_KAKTUS;
+    }
+
     //*** POLYMORFISM ***
     // Här uppnås polymorfism genom att anropa metoden vätska() som ursprungligen
     // ligger som en abstrakt metod i klassen/interfacet Bevattning.
     @Override
     public String vätska() {
 
-        return getNamn() + " behöver " + CENTILITER_VÄTSKA_KAKTUS + " cl " + typAvVätska.vätskaTillVäxt + " /dag.";
+        return getNamn() + " behöver " + CENTILITER_VÄTSKA_KAKTUS + " cl " + getTypAvVätska().vätskaTillVäxt + " /dag.";
     }
 }
