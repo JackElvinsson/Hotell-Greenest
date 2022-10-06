@@ -21,7 +21,7 @@ public class Köttätande extends Växt {
     // Här uppnås polymorfism genom att anropa metoden vätska() som ursprungligen
     // ligger som en abstrakt metod i klassen/interfacet Bevattning.
     @Override
-    public String vätska() {
+    public String bevattningPrintable() {
 
         return getNamn() + " behöver " + (VÄTSKA_BASNIVÅ_LITER + (LITER_PER_METER_KÖTTÄTANDE * getLängdIMeter())) + " liter " + getTypAvVätska().vätskaTillVäxt + " /dag.";
     }

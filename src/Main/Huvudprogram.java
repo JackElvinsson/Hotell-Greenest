@@ -31,7 +31,7 @@ public class Huvudprogram {
 
                 for (Växt v : växterlista) {
                     if (v.getNamn().toLowerCase().equals(växt)) {
-                        JOptionPane.showMessageDialog(null, v.vätska());
+                        JOptionPane.showMessageDialog(null, v.bevattningPrintable());
                         växtHittad = true;
                         break;
                     }

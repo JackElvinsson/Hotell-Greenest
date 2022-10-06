@@ -17,7 +17,7 @@ public class Palm extends Växt {
     // Här uppnås polymorfism genom att anropa metoden vätska() som ursprungligen
     // ligger som en abstrakt metod i klassen/interfacet Bevattning.
     @Override
-    public String vätska() {
+    public String bevattningPrintable() {
         return getNamn() + " behöver " + LITER_PER_METER_PALM * (getLängdIMeter()) + " liter " + getTypAvVätska().vätskaTillVäxt + " /dag.";
 
     }
