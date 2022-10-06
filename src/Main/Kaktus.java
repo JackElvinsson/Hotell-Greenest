@@ -5,6 +5,8 @@ public class Kaktus extends Växt {
         super(namn, längdIMeter, VätskeTyp.MINERAL_VATTEN);
     }
 
+    // *** INKAPSLING ***
+    // Alla instansvariabler är private och kan bara nås via getters och setters
     private final double CENTILITER_VÄTSKA_KAKTUS = 0.02;
 
     public double getCENTILITER_VÄTSKA_KAKTUS() {
@@ -13,7 +15,7 @@ public class Kaktus extends Växt {
 
     //*** POLYMORFISM ***
     // Här uppnås polymorfism genom att anropa metoden vätska() som ursprungligen
-    // ligger som en abstrakt metod i klassen/interfacet Bevattning.
+    // ligger som en tom, abstrakt metod i interfacet Bevattning.
     @Override
     public String bevattningPrintable() {
 
