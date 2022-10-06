@@ -25,6 +25,11 @@ public class Huvudprogram {
 
             try {
 
+                // String växt blir tilldelad String-värdet från användarens input
+                // och blir sedan jämfört med de olika objekten i växterLista
+                //
+                // Om växt == något av objekten i listan kommer en dialogruta med
+                // bevattningsformel samt vätsketyp skrivas ut
                 String växt = JOptionPane.showInputDialog(null, "~Hotel Greenest~\nVilken växt ska få vätska?").toLowerCase().trim();
 
                 boolean växtHittad = false;
