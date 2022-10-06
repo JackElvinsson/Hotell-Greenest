@@ -8,9 +8,9 @@ class KaktusTest {
 
     Kaktus test = new Kaktus("test", 0.02);
     @Test
-    void vätska() {
+    void bevattningPrintable() {
 
-        assert (test.getCENTILITER_VÄTSKA_KAKTUS() == 2);
-        assert (test.getCENTILITER_VÄTSKA_KAKTUS() != 10);
+        assert (test.getLITER_VÄTSKA_KAKTUS() == 0.02);
+        assert (test.getLITER_VÄTSKA_KAKTUS() != 10);
     }
 }

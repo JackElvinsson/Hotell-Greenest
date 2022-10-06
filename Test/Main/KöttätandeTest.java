@@ -9,7 +9,7 @@ class KöttätandeTest {
     Köttätande test = new Köttätande("test", 0.7);
 
     @Test
-    void vätska() {
+    void bevattningPrintable() {
 
        assert (test.getVÄTSKA_BASNIVÅ_LITER() + (test.getLITER_PER_METER_KÖTTÄTANDE() * test.getLängdIMeter()) == 0.24);
        assert (test.getVÄTSKA_BASNIVÅ_LITER() + (test.getLITER_PER_METER_KÖTTÄTANDE() * test.getLängdIMeter()) != 111);

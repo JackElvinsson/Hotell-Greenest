@@ -7,10 +7,10 @@ public class Kaktus extends Växt {
 
     // *** INKAPSLING ***
     // Alla instansvariabler är private och kan bara nås via getters och setters
-    private final double CENTILITER_VÄTSKA_KAKTUS = 0.02;
+    private final double LITER_VÄTSKA_KAKTUS = 0.02;
 
-    public double getCENTILITER_VÄTSKA_KAKTUS() {
-        return CENTILITER_VÄTSKA_KAKTUS;
+    public double getLITER_VÄTSKA_KAKTUS() {
+        return LITER_VÄTSKA_KAKTUS;
     }
 
     //*** POLYMORFISM ***
@@ -19,6 +19,6 @@ public class Kaktus extends Växt {
     @Override
     public String bevattningPrintable() {
 
-        return getNamn() + " behöver " + CENTILITER_VÄTSKA_KAKTUS + " liter " + getTypAvVätska().vätskaTillVäxt + " /dag.";
+        return getNamn() + " behöver " + LITER_VÄTSKA_KAKTUS + " liter " + getTypAvVätska().vätskaTillVäxt + " /dag.";
     }
 }
